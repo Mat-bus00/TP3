@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS spécifique à la page Connexion */
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 1em;
+        }
+
+        form {
+            background-color: white;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            margin-top: 1em;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 0.5em;
+            margin-top: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            padding: 0.7em 1.5em;
+            border: none;
+            border-radius: 5px;
+            margin-top: 1.5em;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        .forgot-password {
+            display: block;
+            text-align: center;
+            margin-top: 1em;
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Connexion</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="about.html">À propos</a>
+            <a href="contact.html">Contact</a>
+            <a href="signup.html">Inscription</a>
+            <a href="shop.html">Boutique</a>
+        </nav>
+    </header>
+
+    <main>
+        <form>
+            <label for="username">Nom d'utilisateur :</label>
+            <input type="text" id="username" name="username" placeholder="Entrez le nom d'utilisateur">
+
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" placeholder="Entrez le mot de passe">
+
+            <button type="submit">Connexion</button>
+
+            <a href="#" class="forgot-password">Mot de passe oublié?</a>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mon Site</p>
+    </footer>
+</body>
+</html>
