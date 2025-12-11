@@ -44,6 +44,24 @@
         .product button:hover {
             background-color: #b71c1c;
         }
+
+        .video {
+            text-align: center;
+            margin: 2em 0;
+        }
+
+        .video img {
+            width: 560px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .video img:hover {
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
@@ -63,19 +81,28 @@
         <div class="products">
             <div class="product">
                 <h3>Racquettes</h3>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxP_3kxEc6mHjHEomqkR0O84nV1cc2xepT5Q&s" alt="Produit A">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxP_3kxEc6mHjHEomqkR0O84nV1cc2xepT5Q&s" alt="Raquettes">
                 <button>Acheter</button>
             </div> 
             <div class="product">
                 <h3>Souliers</h3>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKp0RtIuK0YxvslSsvVwTvoXntI2PE49WaQA&s" alt="Produit B">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKp0RtIuK0YxvslSsvVwTvoXntI2PE49WaQA&s" alt="Souliers">
                 <button>Acheter</button>
             </div>
             <div class="product">
                 <h3>Volants</h3>
-                <img src="https://m.media-amazon.com/images/I/51VQl1PtCSL.jpg" alt="volants">
+                <img src="https://m.media-amazon.com/images/I/51VQl1PtCSL.jpg" alt="Volants">
                 <button>Acheter</button>
             </div>
+        </div>
+
+        <!-- Vidéo YouTube avec miniature cliquable -->
+        <div class="video">
+            <h2>Présentation vidéo</h2>
+            <a href="https://www.youtube.com/watch?v=RGmZUSIM3s8" target="_blank" rel="noopener">
+                <img src="https://img.youtube.com/vi/RGmZUSIM3s8/hqdefault.jpg" 
+                     alt="Miniature vidéo YouTube">
+            </a>
         </div>
     </main>
 
@@ -83,4 +110,4 @@
         <p>&copy; 2025 Mon Site</p>
     </footer>
 </body>
-</html> 
+</html>
